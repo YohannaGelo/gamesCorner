@@ -1,0 +1,183 @@
+html, body {  
+  margin:0px;  
+  height:100%;  
+  width: 100%;
+}  
+
+body {
+  font-family: Corbel;
+	background-image: url(../img/fondohd.jpg);
+  /* width: fit-content;
+  height: fit-content; */
+}
+
+
+.logo {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  
+}
+
+/* clase para la caja grande o div del menú izquierdo */
+.menu_izquierdo {
+  position: fixed;
+   left: 0%;
+   top: 0%;
+   width: 30%;
+   height: 100%;
+   background-color: #0101084e;
+}
+
+
+/* diseño del texto del parrafo con clase para dar más margen a los nombres */
+p {
+  font-family: Corbel;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: 500;
+  text-align: justify;
+  text-shadow: 0 0 0.2em #010108, 0 0 0.2em #f6b3e5;
+  /* -webkit-text-stroke: 1px #010108; */
+  color: #f6b3e5; 
+}
+
+.margen_p {
+  margin-left: 15%;
+}
+
+/* div que contiene el copyright */
+.copy {
+  position: fixed;
+  top: 90%;
+  left: 30%;
+  width: 100%;
+  text-align: left;
+  background-color: rgba(21, 133, 96, 0);
+}
+
+/* diseño de la linea hr */
+.linea {
+  width: 100%;
+  margin-left: 0px;
+  size: 4px;
+  border-color: #20115b;
+}
+
+/* diseño del texto del copyright */
+.texto_copy {
+  margin-left: 20px;
+  font-size: 14px;
+  font-style: italic;
+  color: #010108;
+  
+}
+
+#color_texto_copy {
+  color: #20115b;
+  text-shadow: 0 0 0.2em #8181e9, 0 0 0.2em #f6b3e5;
+}
+
+
+/* clase para la caja grande o div que contiene toda la cruceta */
+.cajon_cruceta {
+  position: absolute;
+  left: 30%;
+  width: 70%;  
+  background-color: #20115b00;
+}
+
+.cruceta {
+  position: relative; 
+  transform: scale(80%);
+  background-color: rgba(0, 255, 255, 0);
+}
+
+/*#cruceta {
+    position: absolute;
+    top: -135px;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    transform: scale(80%);
+    background-color: rgba(0, 255, 255, 0);
+  }*/
+
+
+/* ID que dan la posición a cada parte de la cruceta */
+#div-pc {
+    position: absolute;
+    left: 450px;
+    top: 150px;
+    transform: translate(-50%, -50%);
+    transform: scale(120%);
+  }
+
+
+  #div-cruceta-iz {
+    position: absolute;
+    left: 250px;
+    top: 370px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    transform: scale(120%);
+  } 
+
+
+  #div-cruceta-de {
+    position: absolute;
+    left: 590px;
+    top: 370px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    transform: scale(120%);
+  }
+    
+  #div-sw {
+    position: absolute;
+    left: 450px;
+    top: 520px;
+    transform: translate(-50%, -50%);
+    transform: scale(120%);
+   
+  }
+  
+
+/* Clases que hacen que la cruceta cambie de color */ 
+  .presentar {
+    text-align: center;
+   
+    }
+
+    .presentar a, .presentar img, .presentar a span {
+    border:0;
+    padding:0;
+    margin:0;
+    
+    }
+
+    .presentar a {
+    position: relative;
+    display: inline-block;
+    
+    }
+
+    .presentar a span {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    }
+
+    .presentar a:hover span {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    }
